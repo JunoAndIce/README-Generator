@@ -46,4 +46,3 @@
   Griffin Gore | liq543
 
   <https://github.com/JunoandIce>
-  
