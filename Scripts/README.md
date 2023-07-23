@@ -1,42 +1,46 @@
 
-  # M
+# README-Generator
   
   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
   
-  ## Description
+## Description
   
-  M
+  A simple readme generator using these technologies:
+
+- NodeJS
+- NPM Inquirer
+
+## Table of Contents
   
-  ## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Media](#media)
+- [Credits](#credits)
   
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
+## Installation
   
-  ## Installation
+  Simply install nodeJS and run node index.js from inside a terminal.
   
-  M
+## Usage
   
-  ## Usage
+  After using node index.js, the script will prompt the user to fill out information of their readme. After completing each prompt, a README.md file is
+  created, with all the information the user entered properly placed on each section.
   
-  M
-  
-  ## License
+## License
   
   This project is covered under the MIT license.
   
-  ## Contributing
+## Contributing
   
-  M
+  N/A
   
-  ## Tests
-  
-  M
-  
-  ## Questions
-  
-  For more information, feel free to reach out to me on [GitHub](https://github.com/M) or via email at M.
+## Media
+  ![](./assets/screencap.gif)
+## Credits
+
+  Ediubong Ekwere | Juno and Ice
+
+  <https://github.com/Juno> and Ice
   

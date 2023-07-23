@@ -3,54 +3,49 @@ const fs = require('fs');
 
 
 // Inquire the user on startup 
-inquirer.prompt ([
-    {
-      type: 'input',
-      name: 'title',
-      message: 'What is your project title?',
-    },
-    {
-      type: 'input',
-      name: 'description',
-      message: 'Enter a description of your project.',
-    },
-    {
-      type: 'input',
-      name: 'installation',
-      message: 'Enter installation instructions.',
-    },
-    {
-      type: 'input',
-      name: 'usage',
-      message: 'Enter usage information.',
-    },
-    {
-      type: 'input',
-      name: 'contributing',
-      message: 'Enter contribution guidelines.',
-    },
-    {
-      type: 'input',
-      name: 'tests',
-      message: 'Enter test instructions.',
-    },
-    {
-      type: 'list',
-      name: 'license',
-      message: 'Choose a license for your project.',
-      choices: ['MIT', 'GPLv3', 'Apache', 'Unlicense', 'BSD'],
-    },
-    {
-      type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub username.',
-    },
-    {
-      type: 'input',
-      name: 'email',
-      message: 'Enter your email address.',
-    },
-  ])
+inquirer.prompt([
+  {
+    type: 'input',
+    name: 'title',
+    message: 'What is your project title?',
+  },
+  {
+    type: 'input',
+    name: 'description',
+    message: 'Enter a description of your project.',
+  },
+  {
+    type: 'input',
+    name: 'installation',
+    message: 'Enter installation instructions.',
+  },
+  {
+    type: 'input',
+    name: 'usage',
+    message: 'Enter usage information.',
+  },
+  {
+    type: 'input',
+    name: 'contributing',
+    message: 'Enter contribution guidelines.',
+  },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license for your project.',
+    choices: ['MIT', 'GPLv3', 'Apache', 'Unlicense', 'BSD'],
+  },
+  {
+    type: 'input',
+    name: 'github',
+    message: 'Enter your GitHub username.',
+  },
+  {
+    type: 'input',
+    name: 'name',
+    message: 'Enter your first and last name',
+  },
+])
 
   .then((response) => {
     console.log(response);
@@ -66,47 +61,46 @@ inquirer.prompt ([
 
 
 // A function to simply return a readme string
-  function generateReadme(response) {
-    return `
-  # ${response.title}
+function generateReadme(response) {
+  return `
+# ${response.title}
   
-  ![License](https://img.shields.io/badge/License-${encodeURIComponent(response.license)}-blue.svg)
+![License](https://img.shields.io/badge/License-${encodeURIComponent(response.license)}-blue.svg)
   
-  ## Description
+## Description
   
-  ${response.description}
+${response.description}
   
-  ## Table of Contents
+## Table of Contents
   
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
+  - [Media](#media)
+  - [Credits](#credits)
   
-  ## Installation
+## Installation
   
-  ${response.installation}
+${response.installation}
   
-  ## Usage
+## Usage
   
-  ${response.usage}
+${response.usage}
   
-  ## License
+## License
   
-  This project is covered under the ${response.license} license.
+This project is covered under the ${response.license} license.
   
-  ## Contributing
+## Contributing
   
-  ${response.contributing}
+${response.contributing}
   
-  ## Tests
+ ## Media
   
-  ${response.tests}
-  
-  ## Questions
-  
-  For more information, feel free to reach out to me on [GitHub](https://github.com/${response.github}) or via email at ${response.email}.
+## Credits
+  ${response.name} | ${response.github}
+
+  https://github.com/${response.github} 
   `;
-  }
+}
