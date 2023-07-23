@@ -1,7 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const answers = inquirer.prompt([
+
+// Inquire the user on startup 
+inquirer.prompt ([
     {
       type: 'input',
       name: 'title',
@@ -49,12 +51,62 @@ const answers = inquirer.prompt([
       message: 'Enter your email address.',
     },
   ])
-  // const markdown = generateMarkdown(answers);
+
   .then((response) => {
     console.log(response);
 
-    fs.writeFile('README.md', JSON.stringify(response, null, '\t'), (err) =>
+
+    const readme = generateReadme(response)
+
+
+    fs.writeFile('README.md', readme, (err) =>
       err ? console.error(err) : console.log('Success!'))
   });
 
+
+
+// A function to simply return a readme string
+  function generateReadme(response) {
+    return `
+  # ${response.title}
   
+  ![License](https://img.shields.io/badge/License-${encodeURIComponent(response.license)}-blue.svg)
+  
+  ## Description
+  
+  ${response.description}
+  
+  ## Table of Contents
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
+  ## Installation
+  
+  ${response.installation}
+  
+  ## Usage
+  
+  ${response.usage}
+  
+  ## License
+  
+  This project is covered under the ${response.license} license.
+  
+  ## Contributing
+  
+  ${response.contributing}
+  
+  ## Tests
+  
+  ${response.tests}
+  
+  ## Questions
+  
+  For more information, feel free to reach out to me on [GitHub](https://github.com/${response.github}) or via email at ${response.email}.
+  `;
+  }
