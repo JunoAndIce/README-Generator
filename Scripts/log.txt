@@ -1,0 +1,11 @@
+{
+	"title": "Me",
+	"description": "Me",
+	"installation": "Me",
+	"usage": "Me",
+	"contributing": "Me",
+	"tests": "Me",
+	"license": "MIT",
+	"github": "Me",
+	"email": "Me"
+}
