@@ -37,7 +37,8 @@
   N/A
   
 ## Media
-  ![](./assets/screencap.gif)
+
+  https://raw.githubusercontent.com/JunoAndIce/README-Generator/main/assets/screencap.mp4
 ## Credits
 
   Ediubong Ekwere | Juno and Ice
