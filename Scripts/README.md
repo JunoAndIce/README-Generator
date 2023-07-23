@@ -38,10 +38,11 @@
   
 ## Media
 
-  https://raw.githubusercontent.com/JunoAndIce/README-Generator/main/assets/screencap.mp4
+  ![Gif of working concept](/assets/screencap.gif)
+  
 ## Credits
 
   Ediubong Ekwere | Juno and Ice
 
-  <https://github.com/Juno> and Ice
+  <https://github.com/JunoandIce>
   
