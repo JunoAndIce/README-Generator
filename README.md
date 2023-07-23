@@ -43,6 +43,7 @@
 ## Credits
 
   Ediubong Ekwere | Juno and Ice
+  Griffin Gore | liq543
 
   <https://github.com/JunoandIce>
   
