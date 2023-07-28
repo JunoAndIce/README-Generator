@@ -21,6 +21,11 @@ inquirer.prompt([
   },
   {
     type: 'input',
+    name: 'technologies',
+    message: 'Enter any technologies used:',
+  },
+  {
+    type: 'input',
     name: 'usage',
     message: 'Enter usage information.',
   },
@@ -42,9 +47,14 @@ inquirer.prompt([
   },
   {
     type: 'input',
+    name: 'email',
+    message: 'Enter your github email:',
+  },
+  {
+    type: 'input',
     name: 'name',
     message: 'Enter your first and last name',
-  },
+  }
 ])
 
   .then((response) => {
@@ -83,6 +93,10 @@ ${response.description}
 ## Installation
   
 ${response.installation}
+
+## Usage
+  
+${response.technologies}
   
 ## Usage
   
@@ -101,6 +115,6 @@ ${response.contributing}
 ## Credits
   ${response.name} | ${response.github}
 
-  https://github.com/${response.github} 
+  https://github.com/${response.github} | [${response.email}](mailto:${response.email})
   `;
 }

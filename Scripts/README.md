@@ -1,15 +1,12 @@
 
-# README-Generator
+# The Logo Central
   
-  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
   
 ## Description
   
-  A simple readme generator using these technologies:
-
-- NodeJS
-- NPM Inquirer
-
+The Logo Central is a NodeJS powered logo generator. It takes in user input for the shape, shape color, text, and text color. Once all of these are recieved, the script will then generate an SVG file with the logo printed on the page.
+  
 ## Table of Contents
   
 - [Installation](#installation)
@@ -21,28 +18,28 @@
   
 ## Installation
   
-  Simply install nodeJS and run node index.js from inside a terminal.
+Install NodeJS, and then initialize npm. Install these npm packages:
+
+- NPM Inquirer
+- Validate-Color.
   
 ## Usage
   
-  After using node index.js, the script will prompt the user to fill out information of their readme. After completing each prompt, a README.md file is
-  created, with all the information the user entered properly placed on each section.
+Simply run 'node index.js' from a terminal powered by node in the same directory of the scripts. 
   
 ## License
   
-  This project is covered under the MIT license.
+This project is covered under the MIT license.
   
 ## Contributing
   
-  N/A
+N/A
   
 ## Media
-
-  ![Gif of working concept](/assets/screencap.gif)
   
 ## Credits
 
-  Ediubong Ekwere | Juno and Ice
+  Ediubong Ekwere | JunoAndIce
 
-  <https://github.com/JunoandIce>
+  <https://github.com/JunoAndIce> | [ekwere.edi@gmail.com](mailto:ekwere.edi@gmail.com)
   
