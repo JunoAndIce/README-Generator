@@ -94,7 +94,7 @@ ${response.description}
   
 ${response.installation}
 
-## Usage
+## Technologies
   
 ${response.technologies}
   

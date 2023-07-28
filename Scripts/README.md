@@ -5,27 +5,28 @@
   
 ## Description
   
-The Logo Central is a NodeJS powered logo generator. It takes in user input for the shape, shape color, text, and text color. Once all of these are recieved, the script will then generate an SVG file with the logo printed on the page.
+The Logo Central is a NodeJS powered logo generator that creates an SVG file of the users input.
   
 ## Table of Contents
   
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Media](#media)
-- [Credits](#credits)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Media](#media)
+  - [Credits](#credits)
   
 ## Installation
   
-Install NodeJS, and then initialize npm. Install these npm packages:
+Install NodeJs, and NPM. Then install two npm  packages: npm i inquirer, npm i validate-color, npm i jest.
 
-- NPM Inquirer
-- Validate-Color.
+## Usage
+  
+NodeJS, NPM Inquirer, NPM Validate Color, NPM Jest
   
 ## Usage
   
-Simply run 'node index.js' from a terminal powered by node in the same directory of the scripts. 
+After running node index.js simply input your logo text (3 characters max), logo color (Enter a valid hexdecimal or keyword), shape (multiple choice) and shape color. After entering all of this information, your shape.svg file will be created in the folder location.
   
 ## License
   
@@ -35,11 +36,10 @@ This project is covered under the MIT license.
   
 N/A
   
-## Media
+ ## Media
   
 ## Credits
-
   Ediubong Ekwere | JunoAndIce
 
-  <https://github.com/JunoAndIce> | [ekwere.edi@gmail.com](mailto:ekwere.edi@gmail.com)
+  https://github.com/JunoAndIce | [ekwere.edi@gmail.com](mailto:ekwere.edi@gmail.com)
   
